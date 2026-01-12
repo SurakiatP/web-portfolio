@@ -1,6 +1,6 @@
 {
   "profile": {
-    "name": "Alex Chen",
+    "name": "Surakiat Kansa-ard",
     "role": "AI Engineer",
     "bio": "Passionate about building scalable AI solutions and bridging the gap between research and production. Experienced in LLMs, Computer Vision, and MLOps.",
     "location": "San Francisco, CA",
@@ -14,19 +14,44 @@
   "skills": [
     {
       "category": "Languages",
-      "items": ["Python", "TypeScript", "C++", "SQL", "Go"]
+      "items": [
+        "Python",
+        "TypeScript",
+        "C++",
+        "SQL",
+        "Go"
+      ]
     },
     {
       "category": "AI/ML",
-      "items": ["PyTorch", "TensorFlow", "Hugging Face", "LangChain", "OpenAI API", "scikit-learn"]
+      "items": [
+        "PyTorch",
+        "TensorFlow",
+        "Hugging Face",
+        "LangChain",
+        "OpenAI API",
+        "scikit-learn"
+      ]
     },
     {
       "category": "Tools & Ops",
-      "items": ["Docker", "Kubernetes", "AWS", "GCP", "Git", "CI/CD"]
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "GCP",
+        "Git",
+        "CI/CD"
+      ]
     },
     {
       "category": "Web",
-      "items": ["Next.js", "React", "Node.js", "FastAPI"]
+      "items": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "FastAPI"
+      ]
     }
   ],
   "experience": [
@@ -47,21 +72,33 @@
     {
       "title": "SmartAgent",
       "description": "An autonomous AI agent capable of planning and executing complex tasks using LLMs.",
-      "tech": ["Python", "LangChain", "OpenAI"],
+      "tech": [
+        "Python",
+        "LangChain",
+        "OpenAI"
+      ],
       "link": "https://github.com/example/smartagent",
       "image": "/images/project1.jpg"
     },
     {
       "title": "VisionGuard",
       "description": "Real-time object detection system for security cameras with edge deployment support.",
-      "tech": ["PyTorch", "YOLOv8", "FastAPI"],
+      "tech": [
+        "PyTorch",
+        "YOLOv8",
+        "FastAPI"
+      ],
       "link": "https://github.com/example/visionguard",
       "image": "/images/project2.jpg"
     },
     {
       "title": "NeuralSearch",
       "description": "Semantic search engine for large document bases using vector embeddings.",
-      "tech": ["Pinecone", "Next.js", "OpenAI"],
+      "tech": [
+        "Pinecone",
+        "Next.js",
+        "OpenAI"
+      ],
       "link": "https://github.com/example/neuralsearch",
       "image": "/images/project3.jpg"
     }

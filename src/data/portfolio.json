@@ -1,0 +1,81 @@
+{
+  "profile": {
+    "name": "Alex Chen",
+    "role": "AI Engineer",
+    "bio": "Passionate about building scalable AI solutions and bridging the gap between research and production. Experienced in LLMs, Computer Vision, and MLOps.",
+    "location": "San Francisco, CA",
+    "email": "alex.chen@example.com",
+    "social": {
+      "github": "https://github.com",
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com"
+    }
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["Python", "TypeScript", "C++", "SQL", "Go"]
+    },
+    {
+      "category": "AI/ML",
+      "items": ["PyTorch", "TensorFlow", "Hugging Face", "LangChain", "OpenAI API", "scikit-learn"]
+    },
+    {
+      "category": "Tools & Ops",
+      "items": ["Docker", "Kubernetes", "AWS", "GCP", "Git", "CI/CD"]
+    },
+    {
+      "category": "Web",
+      "items": ["Next.js", "React", "Node.js", "FastAPI"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "TechCorp AI",
+      "role": "Senior AI Engineer",
+      "period": "2023 - Present",
+      "description": "Leading the development of generative AI agents for customer support. Optimized inference latency by 40% using quantization techniques."
+    },
+    {
+      "company": "DataFlow Systems",
+      "role": "Machine Learning Engineer",
+      "period": "2021 - 2023",
+      "description": "Built and deployed computer vision models for quality control in manufacturing. Implemented automated MLOps pipelines."
+    }
+  ],
+  "projects": [
+    {
+      "title": "SmartAgent",
+      "description": "An autonomous AI agent capable of planning and executing complex tasks using LLMs.",
+      "tech": ["Python", "LangChain", "OpenAI"],
+      "link": "https://github.com/example/smartagent",
+      "image": "/images/project1.jpg"
+    },
+    {
+      "title": "VisionGuard",
+      "description": "Real-time object detection system for security cameras with edge deployment support.",
+      "tech": ["PyTorch", "YOLOv8", "FastAPI"],
+      "link": "https://github.com/example/visionguard",
+      "image": "/images/project2.jpg"
+    },
+    {
+      "title": "NeuralSearch",
+      "description": "Semantic search engine for large document bases using vector embeddings.",
+      "tech": ["Pinecone", "Next.js", "OpenAI"],
+      "link": "https://github.com/example/neuralsearch",
+      "image": "/images/project3.jpg"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "TensorFlow Developer Certificate",
+      "issuer": "Google",
+      "date": "2023"
+    },
+    {
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuer": "AWS",
+      "date": "2022"
+    }
+  ]
+}

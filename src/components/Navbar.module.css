@@ -1,0 +1,53 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.links a {
+    font-size: 0.95rem;
+    color: #a1a1a1;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        /* Simple mobile hide for now, or implement hamburger later */
+    }
+}

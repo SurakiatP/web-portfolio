@@ -7,8 +7,7 @@
     "email": "alex.chen@example.com",
     "social": {
       "github": "https://github.com",
-      "linkedin": "https://linkedin.com",
-      "twitter": "https://twitter.com"
+      "linkedin": "https://linkedin.com"
     }
   },
   "skills": [
@@ -38,8 +37,6 @@
       "items": [
         "Docker",
         "Kubernetes",
-        "AWS",
-        "GCP",
         "Git",
         "CI/CD"
       ]

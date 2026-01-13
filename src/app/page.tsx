@@ -287,9 +287,9 @@ export default function Home() {
 
   // ⚠️ EDIT HERE: Update these URLs when you change your CV file
   const resumeConfig = {
-    embedUrl: "https://drive.google.com/file/d/1TO3vd9okRBNXyM1JYTdkIBnSFY20mSD_/preview",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1TO3vd9okRBNXyM1JYTdkIBnSFY20mSD_",
-    lastUpdate: "January 2025"
+    embedUrl: "https://drive.google.com/file/d/1geyOISxVwcmw_6qosjhRGXA-mE_yAsaI/preview",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1geyOISxVwcmw_6qosjhRGXA-mE_yAsaI",
+    lastUpdate: "January 2026"
   };
 
   return (

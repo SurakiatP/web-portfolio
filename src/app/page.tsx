@@ -519,53 +519,50 @@ export default function Home() {
           </div>
         </section>
 
-        {/* EXPERIENCE & CERTIFICATIONS */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Experience */}
-          <section id="experience" className="scroll-mt-20 space-y-8">
-            <h2 className="text-3xl font-bold flex items-center gap-3">
-              <Layers className="text-indigo-400" /> Experience
-            </h2>
-            <div className="space-y-6">
-              {experience.map((exp, idx) => (
-                <div key={idx} className="relative pl-8 border-l-2 border-white/5">
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start">
-                      <h3 className="font-bold text-lg text-white">{exp.role}</h3>
-                      <span className="text-xs text-slate-500 font-mono">{exp.period}</span>
-                    </div>
-                    <p className="text-cyan-400 text-sm font-semibold">{exp.company}</p>
-                    <p className="text-sm text-slate-400 leading-relaxed">
-                      {exp.description}
-                    </p>
+        {/* EXPERIENCE SECTION */}
+        <section id="experience" className="scroll-mt-20 space-y-8">
+          <h2 className="text-3xl font-bold flex items-center gap-3">
+            <Layers className="text-indigo-400" /> Experience
+          </h2>
+          <div className="space-y-6">
+            {experience.map((exp, idx) => (
+              <div key={idx} className="relative pl-8 border-l-2 border-white/5">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-start">
+                    <h3 className="font-bold text-lg text-white">{exp.role}</h3>
+                    <span className="text-xs text-slate-500 font-mono">{exp.period}</span>
                   </div>
+                  <p className="text-cyan-400 text-sm font-semibold">{exp.company}</p>
+                  <p className="text-sm text-slate-400 leading-relaxed">
+                    {exp.description}
+                  </p>
                 </div>
-              ))}
-            </div>
-          </section>
+              </div>
+            ))}
+          </div>
+        </section>
 
-          {/* Certifications */}
-          <section id="certifications" className="scroll-mt-20 space-y-8">
-            <h2 className="text-3xl font-bold flex items-center gap-3">
-              <Award className="text-amber-400" /> Certifications
-            </h2>
-            <div className="grid grid-cols-1 gap-4">
-              {certifications.map((cert, idx) => (
-                <div
-                  key={idx}
-                  onClick={() => setSelectedCert(cert)}
-                  className="group p-4 bg-slate-900/50 border border-white/5 rounded-2xl flex items-center gap-4 hover:border-amber-400/30 transition-all cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  <div className="p-3 bg-amber-400/10 rounded-xl group-hover:bg-amber-400/20 transition-colors">
-                    <Award className="text-amber-400 w-5 h-5" />
-                  </div>
-                  <span className="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">{cert.name}</span>
+        {/* CERTIFICATIONS SECTION */}
+        <section id="certifications" className="scroll-mt-20 space-y-8">
+          <h2 className="text-3xl font-bold flex items-center gap-3">
+            <Award className="text-amber-400" /> Certifications
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {certifications.map((cert, idx) => (
+              <div
+                key={idx}
+                onClick={() => setSelectedCert(cert)}
+                className="group p-4 bg-slate-900/50 border border-white/5 rounded-2xl flex items-center gap-4 hover:border-amber-400/30 transition-all cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <div className="p-3 bg-amber-400/10 rounded-xl group-hover:bg-amber-400/20 transition-colors">
+                  <Award className="text-amber-400 w-5 h-5" />
                 </div>
-              ))}
-            </div>
-          </section>
-        </div>
+                <span className="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">{cert.name}</span>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* FOOTER */}
         <footer id="contact" className="scroll-mt-20 pt-32 pb-8 border-t border-white/5 text-center space-y-8">

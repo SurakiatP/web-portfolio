@@ -244,6 +244,7 @@ const portfolioData = {
     { name: "DataCamp Associate Data Scientist in Python", image: "/images/cert_data_scientist.png" },
     { name: "Codecademy ML/AI Engineer Career Path", image: "/images/cert_ml_ai_engineer.png" },
     { name: "Codecademy Prompt Engineering", image: "/images/cert_prompt_engineer.png" },
+    { name: "Hugging Face Fundamentals of Agents", image: "/images/cert_fundamentals of Agents.webp" },
   ]
 };
 

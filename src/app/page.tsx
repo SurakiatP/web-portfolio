@@ -245,6 +245,8 @@ const portfolioData = {
     { name: "Codecademy ML/AI Engineer Career Path", image: "/images/cert_ml_ai_engineer.png" },
     { name: "Codecademy Prompt Engineering", image: "/images/cert_prompt_engineer.png" },
     { name: "Hugging Face Fundamentals of Agents", image: "/images/cert_fundamentals of Agents.webp" },
+    { name: "Hugging Face Agent Course", image: "/images/cert_hugging-face-agent-course.webp" },
+    { name: "Hugging Face Fundamentals of MCP", image: "/images/cert_hugging-face-fundamentals-of-mcp.webp" },
   ]
 };
 

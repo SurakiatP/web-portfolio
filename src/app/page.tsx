@@ -247,6 +247,7 @@ const portfolioData = {
     { name: "Hugging Face Fundamentals of Agents", image: "/images/cert_fundamentals of Agents.webp" },
     { name: "Hugging Face Agent Course", image: "/images/cert_hugging-face-agent-course.webp" },
     { name: "Hugging Face Fundamentals of MCP", image: "/images/cert_hugging-face-fundamentals-of-mcp.webp" },
+    { name: "Hugging Face MCP for Production Automation", image: "/images/cert-hugging-face-mcp-for-production-automation.webp" },
   ]
 };
 

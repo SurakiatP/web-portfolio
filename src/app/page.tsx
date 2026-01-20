@@ -588,19 +588,21 @@ export default function Home() {
         {/* Certification Modal */}
         {selectedCert && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200" onClick={() => setSelectedCert(null)}>
-            <div className="relative bg-slate-900 border border-white/10 rounded-2xl w-full max-w-6xl max-h-[95vh] overflow-hidden shadow-2xl" onClick={e => e.stopPropagation()}>
+            <div className="relative bg-slate-900 border border-white/10 rounded-2xl w-full max-w-4xl max-h-[95vh] overflow-y-auto shadow-2xl" onClick={e => e.stopPropagation()}>
               <button
                 onClick={() => setSelectedCert(null)}
-                className="absolute top-4 right-4 p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-colors z-10"
+                className="sticky top-4 float-right mr-4 mt-4 p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-colors z-10"
               >
                 <X size={24} />
               </button>
-              <img
-                src={selectedCert.image}
-                alt={selectedCert.name}
-                className="w-full h-full object-contain"
-              />
-              <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
+              <div className="p-4 pt-0">
+                <img
+                  src={selectedCert.image}
+                  alt={selectedCert.name}
+                  className="w-full h-auto object-contain rounded-lg"
+                />
+              </div>
+              <div className="sticky bottom-0 inset-x-0 p-4 bg-gradient-to-t from-slate-900 via-slate-900/95 to-transparent">
                 <p className="text-white font-bold text-center">{selectedCert.name}</p>
               </div>
             </div>

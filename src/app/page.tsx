@@ -211,7 +211,7 @@ const portfolioData = {
     },
     {
       title: "Uber Delivery Time Prediction MLOps",
-      description: "Production MLOps pipeline for real-time delivery prediction with automated retraining and streaming inference.",
+      description: "End-to-End MLOps pipeline for real-time delivery prediction with automated retraining and streaming inference.",
       image: "/images/project3.png",
       metrics: ["60% Faster Training", "<100ms Latency"],
       tech: ["XGBoost", "MLflow", "Airflow", "DVC", "Kafka"],
@@ -416,7 +416,7 @@ export default function Home() {
           </h1>
           <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
             AI Engineer with expertise in LLMs, RAG Systems, and MLOps.
-            I build intelligent systems that bridge research to production.
+            I build intelligent systems that bridge research to real-world application.
           </p>
 
           {/* CTA Buttons */}
@@ -680,7 +680,7 @@ export default function Home() {
                   Featured <span className="text-gradient">Projects</span>
                 </h2>
                 <p className="text-white/50">
-                  Production-grade AI systems with verified metrics
+                  High-quality AI systems with verified metrics
                 </p>
               </div>
               <a

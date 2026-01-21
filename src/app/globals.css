@@ -34,6 +34,10 @@ h6 {
     font-family: var(--font-space), sans-serif;
 }
 
+.font-space {
+    font-family: var(--font-space), sans-serif;
+}
+
 /* Selection */
 ::selection {
     background: var(--accent);

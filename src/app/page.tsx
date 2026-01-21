@@ -410,6 +410,14 @@ export default function Home() {
           transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
           className="text-center max-w-4xl mx-auto z-10"
         >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-8 backdrop-blur-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span className="text-emerald-400 text-xs font-bold tracking-wide uppercase font-space">Available for work</span>
+          </div>
+
           <p className="text-white/60 text-xl md:text-2xl mb-4 font-light">Hey, I&apos;m</p>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-8">
             <TypewriterText words={roles} />

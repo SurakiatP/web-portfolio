@@ -82,7 +82,7 @@ const portfolioData = {
       items: [
         { name: "LangChain", image_url: "https://api.nuget.org/v3-flatcontainer/langchain/0.2.6/icon" },
         { name: "Hugging Face", image_url: "https://raw.githubusercontent.com/pheralb/svgl/4ecf12b3f0302adb3737c0d2762044f525ecfc62/static/library/hugging_face.svg" },
-        { name: "Ollama", image_url: "https://vmc.digicert.com/bd7bc96c-7afc-470b-b2f8-1e83a59d65d3.svg" },
+        { name: "Ollama", image_url: "https://n8n.io/nodes/ollama.svg" },
         { name: "OpenAI", image_url: "https://static.vecteezy.com/system/resources/previews/022/227/364/non_2x/openai-chatgpt-logo-icon-free-png.png" },
         { name: "Llama", image_url: "https://cdn-icons-png.flaticon.com/512/6033/6033716.png" },
         { name: "Qwen", image_url: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/qwen-color.png" },
@@ -517,6 +517,14 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="py-32 px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
+          {/* Marquee Background */}
+          <div className="absolute inset-0 opacity-5 overflow-hidden pointer-events-none">
+            <Marquee>
+              <span className="text-[200px] font-black text-white whitespace-nowrap">
+                SKILLS • EXPERTISE • TECH •
+              </span>
+            </Marquee>
+          </div>
           <RevealOnScroll>
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -673,6 +681,14 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-32 px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
+          {/* Marquee Background */}
+          <div className="absolute inset-0 opacity-5 overflow-hidden pointer-events-none">
+            <Marquee reverse>
+              <span className="text-[200px] font-black text-white whitespace-nowrap">
+                PROJECTS • WORK • INNOVATION •
+              </span>
+            </Marquee>
+          </div>
           <RevealOnScroll>
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
               <div>
@@ -756,6 +772,14 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience" className="py-32 px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
+          {/* Marquee Background */}
+          <div className="absolute inset-0 opacity-5 overflow-hidden pointer-events-none">
+            <Marquee>
+              <span className="text-[200px] font-black text-white whitespace-nowrap">
+                EXPERIENCE • CAREER • JOURNEY •
+              </span>
+            </Marquee>
+          </div>
           <RevealOnScroll>
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -794,6 +818,14 @@ export default function Home() {
       {/* Certifications Section */}
       <section id="certifications" className="py-32 px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
+          {/* Marquee Background */}
+          <div className="absolute inset-0 opacity-5 overflow-hidden pointer-events-none">
+            <Marquee reverse>
+              <span className="text-[200px] font-black text-white whitespace-nowrap">
+                CERTIFICATIONS • AWARDS • LEARNING •
+              </span>
+            </Marquee>
+          </div>
           <RevealOnScroll>
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -808,15 +840,20 @@ export default function Home() {
               <RevealOnScroll key={idx} delay={idx * 0.05}>
                 <div
                   onClick={() => setSelectedCert(cert)}
-                  className="glass-card p-5 cursor-pointer group"
+                  className="glass-card p-5 cursor-pointer group relative overflow-hidden transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center group-hover:bg-amber-500/30 transition-colors">
                       <Award className="w-5 h-5 text-amber-400" />
                     </div>
-                    <span className="text-sm font-medium text-white/80 group-hover:text-white transition-colors line-clamp-2">
+                    <span className="text-sm font-medium text-white/80 group-hover:text-white transition-colors line-clamp-2 pr-8">
                       {cert.name}
                     </span>
+
+                    {/* Hover Eye Icon */}
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
+                      <Eye className="w-5 h-5 text-[#40E0D0]" />
+                    </div>
                   </div>
                 </div>
               </RevealOnScroll>

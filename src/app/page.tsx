@@ -195,10 +195,10 @@ const portfolioData = {
   projects: [
     {
       title: "Multi-modal RAG Shop Assistant",
-      description: "End-to-end Multi-modal RAG system enabling product search through text, voice, and image queries with CLIP embeddings.",
+      description: "AI-powered product search system with multi-modal inputs (text/voice/image). Features zero hallucination with strict anti-hallucination protocols and Thai language support.",
       image: "/images/project1.png",
-      metrics: ["86.7% Precision", "93.3% Recall", "<1s Latency"],
-      tech: ["CLIP", "Qdrant", "GPT-4", "Whisper", "LangChain", "FastAPI"],
+      metrics: ["0% Hallucination", "93.5% Relevance", "<1s Response"],
+      tech: ["CLIP", "Qdrant", "Groq", "Qwen-3", "Whisper", "LangChain", "Gradio"],
       link: "https://github.com/SurakiatP/Multi-modal-RAG"
     },
     {
@@ -314,8 +314,8 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
 
   const resumeConfig = {
-    embedUrl: "https://drive.google.com/file/d/1geyOISxVwcmw_6qosjhRGXA-mE_yAsaI/preview",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1geyOISxVwcmw_6qosjhRGXA-mE_yAsaI",
+    embedUrl: "https://drive.google.com/file/d/1q-YLrpqL5QI604OarRs3XKyYF7_pxvU5/preview",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1q-YLrpqL5QI604OarRs3XKyYF7_pxvU5",
     lastUpdate: "January 2026"
   };
 

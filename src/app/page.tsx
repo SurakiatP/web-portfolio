@@ -218,6 +218,22 @@ const portfolioData = {
       link: "https://github.com/SurakiatP/uber-delivery-time-prediction-mlops"
     },
     {
+      title: "OCR Document Classification System",
+      description: "AI-powered invoice & receipt analysis system with automated document processing using Computer Vision and NLP for text extraction and classification.",
+      image: "/images/project5.png",
+      metrics: ["Thai/English OCR", "Auto Classification", "Real-time Processing"],
+      tech: ["EasyOCR", "OpenCV", "Pandas", "Streamlit", "NLP"],
+      link: "https://github.com/SurakiatP/OCR-END-TO-END-DOCUMENT-CLASSIFICATION"
+    },
+    {
+      title: "Animals Detection with Deep Learning",
+      description: "Real-time animal detection system using YOLOv8n for 7 COCO classes with live counting, InfluxDB storage, and interactive dashboard.",
+      image: "/images/project6.png",
+      metrics: ["90%+ Accuracy", "25-120 FPS", "7 Animal Classes"],
+      tech: ["YOLOv8", "OpenCV", "InfluxDB", "Streamlit", "Plotly"],
+      link: "https://github.com/SurakiatP/animals-detection-DeepLearning"
+    },
+    {
       title: "Cyber-RAG: Cybersecurity Assistant",
       description: "Specialized RAG system for cybersecurity documentation with zero hallucination from OWASP and MITRE ATT&CK.",
       image: "/images/project4.png",

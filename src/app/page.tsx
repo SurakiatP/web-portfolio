@@ -259,6 +259,7 @@ const portfolioData = {
     { name: "Hugging Face Agent Course", image: "/images/cert_hugging-face-agent-course.webp" },
     { name: "Hugging Face Fundamentals of MCP", image: "/images/cert_hugging-face-fundamentals-of-mcp.webp" },
     { name: "Hugging Face MCP for Production Automation", image: "/images/cert-hugging-face-mcp-for-production-automation.webp" },
+    { name: "Qdrant Essentials Certification", image: "/images/cert-Qdrant-Essentials-Certification.png" },
   ]
 };
 

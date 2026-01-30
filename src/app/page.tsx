@@ -261,6 +261,11 @@ const portfolioData = {
     { name: "Hugging Face MCP for Production Automation", image: "/images/cert-hugging-face-mcp-for-production-automation.webp" },
     { name: "Qdrant Essentials Certification", image: "/images/cert-Qdrant-Essentials-Certification.png" },
     { name: "DeepLearning.AI Agentic AI", image: "/images/cert-agentic-ai-deeplearning-ai.png" },
+    {
+      name: "DeepLearning.AI Functions, Tools and Agents with LangChain",
+      image: "/images/cert-tools-agents-langchain-deeplearning-ai.png",
+      url: "https://learn.deeplearning.ai/accomplishments/68e1e60a-f80c-4f98-ba5e-f609b383dd29?usp=sharing"
+    },
   ]
 };
 
@@ -327,7 +332,7 @@ const Marquee = ({ children, reverse = false }: { children: React.ReactNode; rev
 
 export default function Home() {
   const { profile, roles, skills, projects, experience, certifications } = portfolioData;
-  const [selectedCert, setSelectedCert] = useState<{ name: string; image: string } | null>(null);
+  const [selectedCert, setSelectedCert] = useState<{ name: string; image: string; url?: string } | null>(null);
   const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
 
@@ -876,9 +881,13 @@ export default function Home() {
                       {cert.name}
                     </span>
 
-                    {/* Hover Eye Icon */}
+                    {/* Hover Eye or Link Icon */}
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
-                      <Eye className="w-5 h-5 text-[#40E0D0]" />
+                      {cert.url ? (
+                        <ExternalLink className="w-5 h-5 text-[#40E0D0]" />
+                      ) : (
+                        <Eye className="w-5 h-5 text-[#40E0D0]" />
+                      )}
                     </div>
                   </div>
                 </div>
@@ -977,8 +986,18 @@ export default function Home() {
                 className="w-full h-auto object-contain rounded-lg"
               />
             </div>
-            <div className="sticky bottom-0 p-4 bg-gradient-to-t from-[#111] via-[#111]/95 to-transparent">
+            <div className="sticky bottom-0 p-6 bg-gradient-to-t from-[#111] via-[#111]/95 to-transparent flex flex-col items-center gap-4">
               <p className="text-white font-bold text-center">{selectedCert.name}</p>
+              {selectedCert.url && (
+                <a
+                  href={selectedCert.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-[#40E0D0]/10 border border-[#40E0D0]/30 text-[#40E0D0] text-sm font-medium hover:bg-[#40E0D0]/20 transition-all"
+                >
+                  <ExternalLink size={16} /> Verify Certificate
+                </a>
+              )}
             </div>
           </motion.div>
         </motion.div>

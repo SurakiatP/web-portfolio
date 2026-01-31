@@ -266,6 +266,11 @@ const portfolioData = {
       image: "/images/cert-tools-agents-langchain-deeplearning-ai.png",
       url: "https://learn.deeplearning.ai/accomplishments/68e1e60a-f80c-4f98-ba5e-f609b383dd29?usp=sharing"
     },
+    {
+      name: "DeepLearning.AI AI Agents with LangGraph",
+      image: "/images/cert-ai-agents-langgraph-deeplearning-ai.png",
+      url: "https://learn.deeplearning.ai/accomplishments/ea95189f-fbeb-4448-98ef-1a7a7e11ec53?usp=sharing"
+    },
   ]
 };
 

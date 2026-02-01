@@ -271,6 +271,11 @@ const portfolioData = {
       image: "/images/cert-ai-agents-langgraph-deeplearning-ai.png",
       url: "https://learn.deeplearning.ai/accomplishments/ea95189f-fbeb-4448-98ef-1a7a7e11ec53?usp=sharing"
     },
+    {
+      name: "DeepLearning.AI Building Agentic RAG with LlamaIndex",
+      image: "/images/cert-Building-Agentic-RAG-with-Llamaindex.png",
+      url: "https://learn.deeplearning.ai/accomplishments/4f9a19f8-54e5-46d7-b62c-fe54ef12fb4f?usp=sharing"
+    },
   ]
 };
 

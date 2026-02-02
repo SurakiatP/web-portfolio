@@ -276,6 +276,11 @@ const portfolioData = {
       image: "/images/cert-Building-Agentic-RAG-with-Llamaindex.png",
       url: "https://learn.deeplearning.ai/accomplishments/4f9a19f8-54e5-46d7-b62c-fe54ef12fb4f?usp=sharing"
     },
+    {
+      name: "DeepLearning.AI Long-Term Agentic Memory With LangGraph",
+      image: "/images/cert-Long-Term-Agentic-Memory-With-LangGraph.png",
+      url: "https://learn.deeplearning.ai/accomplishments/309c608f-5eeb-4568-9b1c-ddedb025fe1f?usp=sharing"
+    },
   ]
 };
 

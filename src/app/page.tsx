@@ -281,6 +281,11 @@ const portfolioData = {
       image: "/images/cert-Long-Term-Agentic-Memory-With-LangGraph.png",
       url: "https://learn.deeplearning.ai/accomplishments/309c608f-5eeb-4568-9b1c-ddedb025fe1f?usp=sharing"
     },
+    {
+      name: "DeepLearning.AI Semantic Caching for AI Agents",
+      image: "/images/cert-Semantic-Caching-for-AI-Agents.png",
+      url: "https://learn.deeplearning.ai/accomplishments/cd3b74a7-d52b-4b32-be92-e95c79e34f3c?usp=sharing"
+    },
   ]
 };
 

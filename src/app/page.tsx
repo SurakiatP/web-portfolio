@@ -80,10 +80,11 @@ const portfolioData = {
       icon: <Sparkles className="w-6 h-6 text-purple-400" />,
       highlight: true,
       items: [
-        { name: "LangChain", image_url: "https://api.nuget.org/v3-flatcontainer/langchain/0.2.6/icon" },
+        { name: "LangChain & Langgraph", image_url: "https://api.nuget.org/v3-flatcontainer/langchain/0.2.6/icon" },
         { name: "Hugging Face", image_url: "https://raw.githubusercontent.com/pheralb/svgl/4ecf12b3f0302adb3737c0d2762044f525ecfc62/static/library/hugging_face.svg" },
         { name: "Ollama", image_url: "https://n8n.io/nodes/ollama.svg" },
         { name: "OpenAI", image_url: "https://static.vecteezy.com/system/resources/previews/022/227/364/non_2x/openai-chatgpt-logo-icon-free-png.png" },
+        { name: "DeepSeek", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/DeepSeek-icon.svg/960px-DeepSeek-icon.svg.png" },
         { name: "Llama", image_url: "https://cdn-icons-png.flaticon.com/512/6033/6033716.png" },
         { name: "Qwen", image_url: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/qwen-color.png" },
         { name: "Gemma", image_url: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/gemma-color.png" },
@@ -98,7 +99,7 @@ const portfolioData = {
       icon: <Code2 className="w-6 h-6 text-blue-400" />,
       items: [
         { name: "Python", image_url: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
-        { name: "SQL", image_url: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" },
+        { name: "SQL", image_url: "https://cdn-icons-png.freepik.com/512/17265/17265861.png" },
         { name: "C/C++", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/500px-C_Programming_Language.svg.png" }
       ]
     },
@@ -122,6 +123,7 @@ const portfolioData = {
         { name: "FAISS", image_url: "https://d2r9phh2n9g4lt.cloudfront.net/website/product-images/FAISS.png" },
         { name: "Qdrant", image_url: "https://files.svgcdn.io/logos/qdrant-icon.png" },
         { name: "Chroma", image_url: "https://raw.githubusercontent.com/cncf/landscape/888d92a5e4b523f626f8c8b1e0172065cbe6b168/hosted_logos/chroma.svg" },
+        { name: "RedisVL", image_url: "https://cdn.iconscout.com/icon/free/png-256/free-redis-icon-svg-download-png-1175103.png?f=webp" },
       ]
     },
     // Row 3: Column 1
@@ -357,9 +359,9 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
 
   const resumeConfig = {
-    embedUrl: "https://drive.google.com/file/d/1q-YLrpqL5QI604OarRs3XKyYF7_pxvU5/preview",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1q-YLrpqL5QI604OarRs3XKyYF7_pxvU5",
-    lastUpdate: "January 2026"
+    embedUrl: "https://drive.google.com/file/d/1IfOYVT3ilZJfrrjOHs7p2IlVMld87-Zc/preview",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1IfOYVT3ilZJfrrjOHs7p2IlVMld87-Zc",
+    lastUpdate: "February 2026"
   };
 
   const navItems = [

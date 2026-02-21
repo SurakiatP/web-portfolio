@@ -72,7 +72,7 @@ const portfolioData = {
       linkedin: "https://www.linkedin.com/in/surakiat-kansa-ard-171942351/"
     }
   },
-  roles: ["AI Engineer!", "ML Developer!", "RAG Specialist!", "Problem Solver!"],
+  roles: ["AI Engineer!", "Agentic AI Builder!", "RAG Specialist!", "ML Engineer!", "Problem Solver!"],
   skills: [
     // Row 1: Full width
     {
@@ -91,6 +91,8 @@ const portfolioData = {
         { name: "Gemini", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Google_Gemini_icon_2025.svg/250px-Google_Gemini_icon_2025.svg.png" },
         { name: "Claude", image_url: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" },
         { name: "DeepEval", image_url: "https://www.maniac.ai/images/integrations/deepeval.png" },
+        { name: "Langfuse", image_url: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.75.0/files/dark/langfuse-color.png" },
+        { name: "FastMCP", image_url: "https://pbs.twimg.com/profile_images/1960735711537053696/rd8uQ7R1_400x400.png" },
       ]
     },
     // Row 2: Column 1
@@ -124,6 +126,7 @@ const portfolioData = {
         { name: "Qdrant", image_url: "https://files.svgcdn.io/logos/qdrant-icon.png" },
         { name: "Chroma", image_url: "https://raw.githubusercontent.com/cncf/landscape/888d92a5e4b523f626f8c8b1e0172065cbe6b168/hosted_logos/chroma.svg" },
         { name: "RedisVL", image_url: "https://cdn.iconscout.com/icon/free/png-256/free-redis-icon-svg-download-png-1175103.png?f=webp" },
+        { name: "PostgreSQL", image_url: "https://cdn-icons-png.flaticon.com/512/5968/5968342.png" },
       ]
     },
     // Row 3: Column 1
@@ -196,10 +199,19 @@ const portfolioData = {
   ],
   projects: [
     {
+      title: "Agentic Research System",
+      description: "A powerful, multi-agent AI research system built with LangGraph, RedisVL, and PostgreSQL. Features intelligent routing, semantic caching, FastMCP integrations, and Human-in-the-Loop (HITL) checkpoints.",
+      image: "/images/project7.png",
+      featured: true,
+      metrics: ["100% Relevancy", "100% Faithfulness", "100% Tool Accuracy", "~$0.09/Query"],
+      tech: ["LangGraph", "FastMCP", "DeepSeek", "Redis", "PostgreSQL", "DeepEval", "Langfuse"],
+      link: "https://github.com/SurakiatP/agentic-research-system"
+    },
+    {
       title: "Multi-modal RAG Shop Assistant",
       description: "AI-powered product search system with multi-modal inputs (text/voice/image). Features zero hallucination with strict anti-hallucination protocols and Thai language support.",
       image: "/images/project1.png",
-      metrics: ["0% Hallucination", "93.5% Relevance", "<1s Response"],
+      metrics: ["93.5% Relevance", "<1s Response"],
       tech: ["CLIP", "Qdrant", "Groq", "Qwen-3", "Whisper", "LangChain", "Gradio"],
       link: "https://github.com/SurakiatP/Multi-modal-RAG"
     },
@@ -239,7 +251,7 @@ const portfolioData = {
       title: "Cyber-RAG: Cybersecurity Assistant",
       description: "Specialized RAG system for cybersecurity documentation with zero hallucination from OWASP and MITRE ATT&CK.",
       image: "/images/project4.png",
-      metrics: ["91.2% Faithfulness", "0% Hallucination"],
+      metrics: ["91.2% Faithfulness"],
       tech: ["Ollama", "LangChain", "FAISS", "BM25", "FastAPI"],
       link: "https://github.com/SurakiatP/cyber-rag-assignment"
     },
@@ -359,8 +371,8 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
 
   const resumeConfig = {
-    embedUrl: "https://drive.google.com/file/d/1IfOYVT3ilZJfrrjOHs7p2IlVMld87-Zc/preview",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1IfOYVT3ilZJfrrjOHs7p2IlVMld87-Zc",
+    embedUrl: "https://drive.google.com/file/d/1lmu9oFa0NltXmKxAVVm5RbVWCDHnP5gq/preview",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1lmu9oFa0NltXmKxAVVm5RbVWCDHnP5gq",
     lastUpdate: "February 2026"
   };
 
@@ -468,7 +480,7 @@ export default function Home() {
             <TypewriterText words={roles} />
           </h1>
           <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
-            AI Engineer with expertise in LLMs, RAG Systems, and MLOps.
+            AI Engineer with expertise in LLMs, Agentic AI, RAG Systems, and MLOps.
             I build intelligent systems that bridge research to real-world application.
           </p>
 
@@ -534,7 +546,7 @@ export default function Home() {
                 <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-[#40E0D0] to-[#06b6d4]" />
                 <div className="glass-card p-6">
                   <p className="text-white/80 leading-relaxed">
-                    I specialize in <span className="text-[#40E0D0] font-medium">Large Language Models (LLMs)</span> and <span className="text-[#40E0D0] font-medium">RAG Systems</span>, ensuring <span className="underline decoration-white/30 underline-offset-4">robust AI solutions</span> and <span className="underline decoration-white/30 underline-offset-4">scalable ML pipelines</span>. I combine deep technical expertise with a <span className="text-[#40E0D0] font-medium">problem-solving mindset</span>, focusing on bridging the gap between research and real-world deployment.
+                    I specialize in <span className="text-[#40E0D0] font-medium">Large Language Models (LLMs)</span>, <span className="text-[#40E0D0] font-medium">Agentic AI</span>, and <span className="text-[#40E0D0] font-medium">RAG Systems</span>, ensuring <span className="underline decoration-white/30 underline-offset-4">robust AI solutions</span> and <span className="underline decoration-white/30 underline-offset-4">scalable ML pipelines</span>. I combine deep technical expertise with a <span className="text-[#40E0D0] font-medium">problem-solving mindset</span>, focusing on bridging the gap between research and real-world deployment.
                   </p>
                 </div>
               </div>
@@ -765,10 +777,11 @@ export default function Home() {
           </RevealOnScroll>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, idx) => (
+            {projects.map((project: any, idx: number) => (
               <RevealOnScroll key={idx} delay={idx * 0.1}>
+                {/* Add dynamic class for featured project */}
                 <div className="project-card group">
-                  <div className="relative h-56 overflow-hidden">
+                  <div className="relative overflow-hidden h-56">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -776,9 +789,16 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
 
+                    {/* Featured Badge */}
+                    {project.featured && (
+                      <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold shadow-[0_0_15px_rgba(245,158,11,0.5)] z-10">
+                        <Award size={14} /> Featured Project
+                      </div>
+                    )}
+
                     {/* Metrics */}
                     <div className="absolute top-4 right-4 flex flex-col gap-2">
-                      {project.metrics.map((metric, i) => (
+                      {project.metrics.map((metric: string, i: number) => (
                         <span
                           key={i}
                           className="px-3 py-1 rounded-full bg-[#0a0a0a]/80 backdrop-blur-md text-[#40E0D0] text-xs font-medium border border-[#40E0D0]/30"
@@ -790,14 +810,14 @@ export default function Home() {
                   </div>
 
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-[#40E0D0] transition-colors">
+                    <h3 className="font-bold mb-3 group-hover:text-[#40E0D0] transition-colors text-xl">
                       {project.title}
                     </h3>
-                    <p className="text-white/50 text-sm leading-relaxed mb-4">
+                    <p className="text-white/50 leading-relaxed mb-4 text-sm">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-6">
-                      {project.tech.map((t, i) => (
+                      {project.tech.map((t: string, i: number) => (
                         <span
                           key={i}
                           className="px-2 py-1 rounded-md bg-white/5 text-white/60 text-xs border border-white/10"

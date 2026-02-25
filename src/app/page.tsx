@@ -203,7 +203,15 @@ const portfolioData = {
       description: "A powerful, multi-agent AI research system built with LangGraph, RedisVL, and PostgreSQL. Features intelligent routing, semantic caching, FastMCP integrations, and Human-in-the-Loop (HITL) checkpoints.",
       image: "/images/project7.png",
       featured: true,
-      metrics: ["100% Relevancy", "100% Faithfulness", "100% Tool Accuracy", "~$0.09/Query"],
+      metrics: [
+        "0.85/1.0 Overall Avg",
+        "1.0/1.0 Faithfulness",
+        "1.0/1.0 Relevancy",
+        "1.0/1.0 Tool Correctness",
+        "5.0/5.0 Plan Quality",
+        "4.2/5.0 Summary Quality",
+        "~$0.09/Query"
+      ],
       tech: ["LangGraph", "FastMCP", "DeepSeek", "Redis", "PostgreSQL", "DeepEval", "Langfuse"],
       link: "https://github.com/SurakiatP/agentic-research-system"
     },
@@ -797,7 +805,7 @@ export default function Home() {
                     )}
 
                     {/* Metrics */}
-                    <div className="absolute top-4 right-4 flex flex-col gap-2">
+                    <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5 max-h-[90%] overflow-y-auto hidden-scrollbar">
                       {project.metrics.map((metric: string, i: number) => (
                         <span
                           key={i}

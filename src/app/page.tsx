@@ -308,6 +308,12 @@ const portfolioData = {
       image: "/images/cert-Semantic-Caching-for-AI-Agents.png",
       url: "https://learn.deeplearning.ai/accomplishments/cd3b74a7-d52b-4b32-be92-e95c79e34f3c?usp=sharing"
     },
+    {
+      name: "DeepLearning.AI Claude Code: A Highly Agentic Coding Assistant",
+      image: "/images/cert-claude-code.png",
+      url: "https://learn.deeplearning.ai/accomplishments/d3bbb320-6b92-40d8-bf65-4225edcbb0ea?usp=sharing"
+    },
+
   ]
 };
 
